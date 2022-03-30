@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0.8575805322128851) 0%, rgba(27,139,193,0.6166841736694677) 0%, rgba(0,212,255,0.8575805322128851) 13%);
+ 
+}
+
+/* Header/Blog Title */
+.encabezado {
+  padding: 30px;
+  text-align: center;
+  background: rgb(13, 186, 209);
+}
+
+.encabezado h1 {
+  font-size: 40px;
+  color:white;
+}
+.encabezado h2 {
+  font-size: 20px;
+  color:white;
+}
+
+/* Style the top navigation bar */
+.nav-contenedor {
+  overflow: hidden;
+  background-color: #11c9cf;
+}
+
+/* Style the topnav links */
+.nav-contenedor a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.nav-contenedor a:hover {
+  background-color: #cbdf16;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.columna-izquierda {
+  float: left;
+  width: 30%;
+}
+.columna-izquierda h1 {
+  color: white;
+  font-size: 20PX;
+  text-align: center;
+  padding:20px;
+}
+/* Aqui vamos a aplicar estilos para todas las imagenes con el selectro <img> */
+img {
+  border: 5px solid rgb(50, 199, 245);
+  box-shadow: 5px 5px 5px;
+  border-radius: 50%;
+}
+/* Estilos por Id */
+/* Los Id son elementos unicos, es decir, que no se repiten */
+#perrito {
+  width: 250px;
+}
+
+/* Right column */
+.columna-derecha {
+  float: left;
+  width: 70%;
+  background-color: white;
+  padding-left: 20px;
+}
+
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  height: 100px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* Clear floats after the columns */
+.fila:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
