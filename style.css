@@ -14,7 +14,8 @@ body {
 .encabezado {
   padding: 30px;
   text-align: center;
-  background: rgb(13, 186, 209);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0.8575805322128851) 0%, rgba(27,139,193,0.6166841736694677) 0%, rgba(0,212,255,0.8575805322128851) 13%);
 }
 
 .encabezado h1 {
@@ -58,24 +59,46 @@ body {
   text-align: center;
   padding:20px;
 }
-/* Aqui vamos a aplicar estilos para todas las imagenes con el selectro <img> */
+/* Aqui vamos a aplicar estilos para todas las imagenes con el selector <img> */
 img {
   border: 5px solid rgb(50, 199, 245);
-  box-shadow: 5px 5px 5px;
+  box-shadow: 2px 2px 5px;
   border-radius: 50%;
+  margin-left: 60px;
 }
 /* Estilos por Id */
 /* Los Id son elementos unicos, es decir, que no se repiten */
-#perrito {
+#ancho {
   width: 250px;
 }
 
-/* Right column */
 .columna-derecha {
   float: left;
   width: 70%;
   background-color: white;
   padding-left: 20px;
+}
+.columna-derecha h1  {
+  color: aquamarine;
+  font-size: 20PX;
+  text-align: left;
+  padding: 20px;
+}
+.columna-derecha h2  {
+  color: aquamarine;
+  font-size: 15PX;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.columna-derecha p {
+  color: black;
+  font-size: 15PX;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
 }
 
 
@@ -108,7 +131,9 @@ img {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0.8575805322128851) 0%, rgba(27,139,193,0.6166841736694677) 0%, rgba(0,212,255,0.8575805322128851) 13%);
+  color: white;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
